@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ruta Fácil a Calor de Hogar</title>
+<style>
+:root{--bg:#faf6ee;--card:#fff;--tx:#2b2418;--mut:#6b5f4a;--ac:#b8860b;--acbg:#f6e7b8;--bd:#e0d6c0;--a:#1b9e77;--b:#e6820e;--j:#b5179e;--bus:#d62828;--dim:#cfc6b2;--hd:#3a2c10;--hdt:#fff7df;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1c1a15;--card:#26231c;--tx:#f1ead9;--mut:#b9ad94;--ac:#e8b93a;--acbg:#4a3d14;--bd:#3d3829;--dim:#4a4536;--hd:#120f08}}
+:root[data-theme="dark"]{--bg:#1c1a15;--card:#26231c;--tx:#f1ead9;--mut:#b9ad94;--ac:#e8b93a;--acbg:#4a3d14;--bd:#3d3829;--dim:#4a4536;--hd:#120f08}
+html{height:100%;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 70px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:17px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--hd);z-index:10}
+.ic{width:1.3em;height:1.3em;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;vertical-align:-.28em;flex:none}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:var(--hd);color:var(--hdt)}
+.bar{max-width:900px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;gap:12px}
+.brand{font-weight:800;display:flex;align-items:center;gap:8px;font-size:1.05rem;margin-right:auto}
+.brand .ic{color:#f2c200;width:1.6em;height:1.6em}
+nav{display:flex;gap:4px}
+nav button{background:none;border:0;color:var(--hdt);padding:8px 12px;min-height:40px;border-radius:10px;font-size:.95rem}
+nav button:hover,nav button:focus-visible{background:rgba(255,255,255,.14)}
+#burger{display:none;background:none;border:0;color:var(--hdt);min-height:44px;padding:8px}
+@media (max-width:700px){#burger{display:block}nav{display:none;position:absolute;left:0;right:0;top:100%;flex-direction:column;background:var(--hd);padding:6px 12px 12px;border-top:1px solid rgba(255,255,255,.15)}nav.open{display:flex}nav button{text-align:left;padding:12px}}
+.hero{background:linear-gradient(135deg,var(--hd),#7a5a10);color:var(--hdt);padding:36px 16px 44px}
+.hero div{max-width:900px;margin:0 auto}
+.hero h1{font-size:clamp(1.7rem,6vw,2.5rem);line-height:1.15;margin:0 0 10px}
+.hero p{margin:0 0 18px;max-width:560px;opacity:.92}
+.hero button{background:#f2c200;color:#2b2418;border:0;font-weight:800}
+main{max-width:900px;margin:0 auto;padding:8px 16px 24px}
+section{scroll-margin-top:70px;padding-top:8px}
+h2{font-size:1.25rem;margin:28px 0 12px;display:flex;align-items:center;gap:8px}
+h2 .ic{color:var(--ac)}
+h3{font-size:.95rem;margin:18px 0 8px;color:var(--mut)}
+button{font:inherit;padding:12px 16px;border-radius:12px;border:2px solid var(--bd);background:var(--card);color:var(--tx);cursor:pointer;min-height:48px;display:inline-flex;align-items:center;justify-content:center;gap:8px}
+button[aria-pressed="true"]{border-color:var(--ac);background:var(--acbg);font-weight:700}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:16px;padding:16px;box-shadow:0 2px 8px rgba(0,0,0,.05)}
+.card h3{margin:0 0 6px;color:var(--tx);font-size:1.05rem;display:flex;gap:8px;align-items:center}
+.card h3 .ic{color:var(--ac)}
+.card p{margin:0 0 12px;color:var(--mut)}
+.row{display:flex;flex-wrap:wrap;gap:8px}
+.modes{display:grid;grid-template-columns:repeat(auto-fit,minmax(92px,1fr));gap:8px}
+.modes button{flex-direction:column;gap:4px;padding:10px 6px;font-size:.9rem}
+.modes .ic{width:1.8em;height:1.8em}
+#out{margin-top:18px;border-left:6px solid var(--ac)}
+.tag{display:inline-block;background:var(--acbg);border-radius:8px;padding:2px 10px;font-size:.88rem;font-weight:700}
+.steps{list-style:none;counter-reset:s;padding:0;margin:12px 0}
+.steps li{counter-increment:s;position:relative;padding:0 0 14px 44px;margin:0}
+.steps li::before{content:counter(s);position:absolute;left:0;top:0;width:30px;height:30px;border-radius:50%;background:var(--ac);color:#1c1a15;font-weight:800;display:grid;place-items:center;font-size:.9rem}
+.steps li::after{content:"";position:absolute;left:14px;top:34px;bottom:4px;width:2px;background:var(--bd)}
+.steps li:last-child::after{display:none}
+.cta{display:inline-flex;align-items:center;gap:8px;margin:6px 8px 0 0;padding:12px 16px;border-radius:12px;background:var(--ac);color:#1c1a15;text-decoration:none;font-weight:700}
+.cta.alt{background:#25a244;color:#fff}
+.gm{margin-top:12px;border-radius:12px;overflow:hidden;border:1px solid var(--bd);background:var(--acbg)}.gm iframe{width:100%;height:380px;border:0;display:block}
+.ln{fill:none;stroke-width:5;stroke-linecap:round}
+.dim{stroke:var(--dim)!important;opacity:.5}
+.st{fill:var(--card);stroke-width:3}
+.lbl{font-size:11px;fill:var(--tx)}
+.star{fill:#f2c200;stroke:#8a6d00;stroke-width:1.2}
+.leg{display:flex;flex-wrap:wrap;gap:12px;font-size:.85rem;color:var(--mut);margin-top:8px}
+.leg i{display:inline-block;width:18px;height:5px;border-radius:3px;margin-right:6px;vertical-align:middle}
+details{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:12px 16px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:700}
+details p{margin:8px 0 0;color:var(--mut)}
+footer{background:var(--hd);color:var(--hdt);padding:24px 16px;font-size:.88rem}
+footer div{max-width:900px;margin:0 auto}
+footer a{color:#f2c200}
+.warn{font-size:.85rem;color:var(--mut);margin-top:14px}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="i-metro" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="14" rx="3"/><path d="M5 11h14M8 17l-2 4M16 17l2 4"/><circle cx="9" cy="14" r=".6"/><circle cx="15" cy="14" r=".6"/></symbol>
+<symbol id="i-bus" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="13" rx="2"/><path d="M4 11h16M6 17v3M18 17v3"/><circle cx="8" cy="14.2" r=".6"/><circle cx="16" cy="14.2" r=".6"/></symbol>
+<symbol id="i-moto" viewBox="0 0 24 24"><circle cx="5.5" cy="17" r="3"/><circle cx="18.5" cy="17" r="3"/><path d="M5.5 17l3-6h5l3 6M13 11l-1-4H9M14 7h3"/></symbol>
+<symbol id="i-car" viewBox="0 0 24 24"><path d="M5 12l1.6-4.2A2 2 0 0 1 8.5 6.5h7a2 2 0 0 1 1.9 1.3L19 12"/><rect x="3" y="12" width="18" height="6" rx="2"/><path d="M6 18v2M18 18v2"/><circle cx="7.5" cy="15" r=".6"/><circle cx="16.5" cy="15" r=".6"/></symbol>
+<symbol id="i-taxi" viewBox="0 0 24 24"><path d="M5 13l1.6-4.2A2 2 0 0 1 8.5 7.5h7a2 2 0 0 1 1.9 1.3L19 13"/><rect x="3" y="13" width="18" height="5" rx="2"/><path d="M6 18v2M18 18v2M10 4.5h4v3h-4z"/></symbol>
+<symbol id="i-walk" viewBox="0 0 24 24"><circle cx="13" cy="4.5" r="1.7"/><path d="M13 7.5l-2 5 3 3v5.5M11 12.5l-3 2M14 10l3 2"/></symbol>
+<symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+<symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></symbol>
+<symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-11.7 7L4 20l1.2-4.6A8 8 0 1 1 21 12z"/></symbol>
+<symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol>
+<symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+<symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-8-5-8-10.5A4.5 4.5 0 0 1 12 7a4.5 4.5 0 0 1 8 2.5C20 15 12 20 12 20z"/></symbol>
+<symbol id="i-map" viewBox="0 0 24 24"><path d="M3 6l6-2 6 2 6-2v14l-6 2-6-2-6 2zM9 4v14M15 6v14"/></symbol>
+<symbol id="i-route" viewBox="0 0 24 24"><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="6" r="2.5"/><path d="M8.5 18H15a3 3 0 0 0 0-6H9a3 3 0 0 1 0-6h6.5"/></symbol>
+<symbol id="i-bulb" viewBox="0 0 24 24"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z"/></symbol>
+</svg>
+
+<header>
+<div class="bar">
+<div class="brand"><svg class="ic"><use href="#i-heart"/></svg>Calor de Hogar</div>
+<button id="burger" aria-label="Abrir menú" aria-expanded="false" onclick="tog()"><svg class="ic"><use href="#i-menu"/></svg></button>
+<nav id="nav" aria-label="Menú principal">
+<button onclick="sc('inicio')">Inicio</button><button onclick="sc('sedes')">Sedes</button><button onclick="sc('ruta')">Cómo llegar</button><button onclick="sc('mapa')">Mapa</button><button onclick="sc('consejos')">Consejos</button><button onclick="sc('contacto')">Contacto</button>
+</nav>
+</div>
+</header>
+
+<div class="hero" id="inicio"><div>
+<h1>Ruta Fácil a Calor de Hogar</h1>
+<p>Elija tres opciones y le explicamos, paso a paso, cómo llegar en Metro, bus, moto, carro, taxi o a pie.</p>
+<button onclick="sc('ruta')"><svg class="ic"><use href="#i-route"/></svg>Planear mi ruta</button>
+</div></div>
+
+<main>
+<section id="sedes">
+<h2><svg class="ic"><use href="#i-pin"/></svg>Nuestras sedes</h2>
+<div class="grid">
+<div class="card"><h3><svg class="ic"><use href="#i-pin"/></svg>Sede 1 · San Cristóbal</h3><p>Calle 67 # 126-26, Medellín</p><button onclick="go('s12','p1')"><svg class="ic"><use href="#i-route"/></svg>Cómo llegar</button></div>
+<div class="card"><h3><svg class="ic"><use href="#i-pin"/></svg>Sede 2 · San Cristóbal</h3><p>Calle 66 # 131-23, Medellín</p><button onclick="go('s12','p2')"><svg class="ic"><use href="#i-route"/></svg>Cómo llegar</button></div>
+<div class="card"><h3><svg class="ic"><use href="#i-pin"/></svg>Sede Sur · La Estrella</h3><p>Calle 73 sur # 64-133 (confirmar por teléfono)</p><button onclick="go('s3')"><svg class="ic"><use href="#i-route"/></svg>Cómo llegar</button></div>
+</div>
+</section>
+
+<section id="ruta">
+<h2><svg class="ic"><use href="#i-route"/></svg>Planee su ruta</h2>
+<div class="card">
+<h3>1. ¿A qué sede va?</h3><div class="row" id="sede"></div>
+<h3>2. ¿Desde dónde sale?</h3><div class="row" id="orig"></div>
+<h3>3. ¿Cómo se va a transportar?</h3><div class="modes" id="mode"></div>
+</div>
+<div class="card" id="out" aria-live="polite"></div>
+</section>
+
+<section id="mapa">
+<h2><svg class="ic"><use href="#i-map"/></svg>Mapa y ubicación</h2>
+<div class="card">
+<div class="row" id="ptabs" role="group" aria-label="Elegir sede en el mapa"></div>
+<div class="gm"><iframe id="gmap" title="Mapa de Google Maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
+<p class="warn" id="paddr" style="margin:10px 0 4px"></p>
+<div class="row" id="vbtns" style="margin-top:8px"></div>
+<p class="warn" id="gmsg" aria-live="polite"></p>
+<a class="cta" id="lOpen" target="_blank" rel="noopener"><svg class="ic"><use href="#i-map"/></svg>Abrir en la app de Google Maps</a>
+<p class="warn">La ruta se ajusta al transporte y a la zona de salida elegidos en el planificador. Si el mapa no carga, use el botón de la app de Google Maps.</p>
+</div>
+</section>
+
+<section id="consejos">
+<h2><svg class="ic"><use href="#i-bulb"/></svg>Consejos para su viaje</h2>
+<details><summary>¿Con cuánto tiempo debo salir?</summary><p>Las rutas combinan Metro, Metrocable y bus; salga con margen extra, sobre todo en horas pico.</p></details>
+<details><summary>¿Qué opción es mejor si tengo movilidad reducida?</summary><p>El taxi o una plataforma de transporte hasta la puerta es la opción más cómoda. Caminar no se recomienda por las pendientes.</p></details>
+<details><summary>¿Hay parqueadero?</summary><p>Si va en moto o carro, pregunte por el parqueadero al llamar a la institución antes de salir.</p></details>
+<details><summary>¿Cuánto cuesta un taxi?</summary><p>Desde el Centro, unos $17.000–19.500 COP; desde El Poblado, unos $23.000–26.700 COP (valores de 2025, aproximados).</p></details>
+</section>
+</main>
+
+<footer id="contacto"><div>
+<h2 style="margin-top:0;color:var(--hdt)"><svg class="ic"><use href="#i-phone"/></svg>Contacto</h2>
+<a class="cta" href="tel:+576044444643"><svg class="ic"><use href="#i-phone"/></svg>(60 4) 444 46 43</a>
+<a class="cta alt" href="https://wa.me/573135905556"><svg class="ic"><use href="#i-chat"/></svg>WhatsApp 313 590 5556</a>
+<a class="cta" href="mailto:info@calordehogar.org.co"><svg class="ic"><use href="#i-mail"/></svg>Correo</a>
+<p>Asistente automatizado con información pública (Moovit, Metro de Medellín, Medellín Travel). Las rutas y los horarios pueden cambiar: confirme con la institución antes de salir. No guardamos datos personales.</p>
+</div></footer>
+
+<script>
+const SEDES={s12:{n:"Sede 1 y Sede 2 · San Cristóbal",d:"Sede 1: Calle 67 # 126-26 · Sede 2: Calle 66 # 131-23"},
+s3:{n:"Sede Sur · La Estrella",d:"Calle 73 sur # 64-133 (la web también muestra «Calle 77 sur»: confirme por teléfono)"}};
+const ORIG={norte:"Norte (Bello, Niquía)",centro:"Centro de Medellín",sur:"Sur (Poblado, Envigado, Itagüí, Sabaneta)",occ:"Occidente (Robledo, La 80, San Javier)"};
+const MODE={metro:["Metro","metro"],bus:["Bus","bus"],moto:["Moto","moto"],car:["Carro","car"],taxi:["Taxi","taxi"],pie:["A pie","walk"]};
+const st={s:"s12",o:"centro",m:"metro",p:"p1",v:"place",me:""};
+const PL={
+p1:{n:"Sede 1",q:"Corporación Calor de Hogar, Calle 67 # 126-26, San Cristóbal, Medellín, Colombia",a:"Calle 67 # 126-26, San Cristóbal, Medellín, Colombia",t:"Calle 67 # 126-26, San Cristóbal",ll:""},
+p2:{n:"Sede 2",q:"Corporación Calor de Hogar, Calle 66 # 131-23, San Cristóbal, Medellín, Colombia",a:"Calle 66 # 131-23, San Cristóbal, Medellín, Colombia",t:"Calle 66 # 131-23, San Cristóbal",ll:""},
+p3:{n:"Sede Sur",q:"Corporación Calor de Hogar, Calle 73 sur # 64-133, La Estrella, Antioquia, Colombia",a:"Calle 73 sur # 64-133, La Estrella, Antioquia, Colombia",t:"Calle 73 sur # 64-133, La Estrella (confirmar por teléfono)",ll:""}};
+/* ll: coordenadas exactas "lat,lng" (clic derecho en Google Maps > copiar). Si se llena, el mapa usa el punto exacto. */
+const OQ={norte:["Niquía, Bello, Antioquia","el Norte"],centro:["Estación San Antonio, Medellín","el Centro"],sur:["El Poblado, Medellín","el Sur"],occ:["Robledo, Medellín","el Occidente"]};
+const DF={metro:"r",bus:"r",moto:"d",car:"d",taxi:"d",pie:"w"};
+const TMODE={metro:"transit",bus:"transit",moto:"driving",car:"driving",taxi:"driving",pie:"walking"};
+const E=encodeURIComponent;
+const ico=i=>`<svg class="ic"><use href="#i-${i}"/></svg>`;
+function drawMap(){
+  const pl=PL[st.p],dest=pl.ll||pl.a,box=document.getElementById("ptabs");box.innerHTML="";
+  for(const k in PL){const b=document.createElement("button");b.innerHTML=ico("pin")+PL[k].n;b.setAttribute("aria-pressed",st.p===k);b.onclick=()=>{st.p=k;drawMap()};box.appendChild(b)}
+  const vb=document.getElementById("vbtns");vb.innerHTML="";
+  [["place",ico("pin")+"Ver la sede"],["o",ico("route")+"Ruta desde "+OQ[st.o][1]+" ("+MODE[st.m][0]+")"],["me",ico("walk")+"Ruta desde mi ubicación"]].forEach(([k,t])=>{
+    const b=document.createElement("button");b.innerHTML=t;b.setAttribute("aria-pressed",st.v===k);
+    b.onclick=()=>{if(k==="me")locate();else{st.v=k;document.getElementById("gmsg").textContent="";drawMap()}};vb.appendChild(b)});
+  let from=st.v==="me"?st.me:OQ[st.o][0],u;
+  if(st.v==="place")u="https://www.google.com/maps?q="+E(pl.ll||pl.q)+"&z=17&hl=es&output=embed";
+  else u="https://www.google.com/maps?saddr="+E(from)+"&daddr="+E(dest)+"&dirflg="+DF[st.m]+"&hl=es&output=embed";
+  const f=document.getElementById("gmap");if(f.dataset.u!==u){f.dataset.u=u;f.src=u}
+  document.getElementById("paddr").textContent=pl.t;
+  document.getElementById("lOpen").href=st.v==="place"?"https://www.google.com/maps/search/?api=1&query="+E(pl.ll||pl.q):"https://www.google.com/maps/dir/?api=1&origin="+E(from)+"&destination="+E(dest)+"&travelmode="+TMODE[st.m];
+}
+function locate(){
+  const m=document.getElementById("gmsg");
+  if(!navigator.geolocation){m.textContent="Su navegador no permite obtener la ubicación. Elija su zona de salida.";return}
+  m.textContent="Buscando su ubicación…";
+  navigator.geolocation.getCurrentPosition(
+    p=>{st.me=p.coords.latitude+","+p.coords.longitude;st.v="me";m.textContent="";drawMap()},
+    ()=>{m.textContent="No pudimos obtener su ubicación. Active el permiso del navegador o elija su zona de salida."},
+    {enableHighAccuracy:true,timeout:10000});
+}
+
+function toSA(o){
+  if(o==="norte")return "Tome la **Línea A** desde Niquía o Bello hacia el sur hasta la estación **San Antonio**.";
+  if(o==="centro")return "Vaya a la estación **San Antonio** (Línea A), en el centro.";
+  if(o==="sur")return "Tome la **Línea A** hacia el norte desde Poblado, Envigado, Itagüí o Sabaneta hasta **San Antonio**.";
+  return null;
+}
+function steps(){
+  const {s,o,m}=st;
+  if(s==="s12"){
+    if(m==="metro"){
+      const a=toSA(o);
+      const pre=a?[a,"En San Antonio haga transbordo a la **Línea B** (sentido San Javier) y bájese en **San Javier**."]:["Llegue a la estación **San Javier** (Línea B)."];
+      return pre.concat(["En San Javier suba al **Metrocable Línea J** hasta **La Aurora**.","En La Aurora tome un bus hacia San Cristóbal (**C23II** o **255I**) y bájese en el **parque principal** (Carrera 130).","Camine hasta la sede: **Sede 2** (Calle 66 # 131-23) o **Sede 1** (Calle 67 # 126-26)."]);
+    }
+    if(m==="bus")return o==="occ"?["Tome el bus **255** (San Cristóbal–La Pola–La 80/Éxito Robledo).","Bájese cerca del parque principal (Carrera 130).","Camine hasta la Calle 66 # 131-23 (Sede 2) o la Calle 67 # 126-26 (Sede 1)."]:
+      [toSA(o),"Haga transbordo a la **Línea B** y bájese en **San Javier**.","Tome el bus **C23I** (San Javier ⇄ San Cristóbal) hasta el parque principal.","Camine hasta la sede."];
+    if(m==="moto"||m==="car")return ["Salga hacia el occidente (Calle 80 / Robledo) y siga la carretera hacia San Cristóbal.","Trace la ruta en su app de mapas con la dirección de la sede.",m==="car"?"Las calles de San Cristóbal son empinadas y estrechas: conduzca con precaución.":"Pregunte por el parqueadero al llamar a la institución.",m==="car"?"Pregunte por el parqueadero al llamar a la institución.":null];
+    if(m==="taxi")return ["Pida un taxi o plataforma con la dirección exacta de la sede.",o==="centro"?"Costo estimado desde el Centro: $17.000–19.500 COP (2025).":o==="sur"?"Costo estimado desde El Poblado: $23.000–26.700 COP (2025).":"Pida el valor estimado en la app antes de salir.","Es la mejor opción si hay movilidad reducida."];
+    return ["Desde **San Javier** son unos 2,5 km (≈ 32 min), subiendo por la vía de San Cristóbal.","Desde **La Aurora** es más corto, por la ciclovía.","No se recomienda para personas mayores o con movilidad reducida."];
+  }
+  if(m==="metro"||m==="bus"){
+    const pre=o==="occ"?["Llegue a **San Javier**, tome la **Línea B** a San Antonio y luego la **Línea A** hacia el sur."]:[o==="norte"||o==="centro"?"Tome la **Línea A** hacia el sur hasta la estación terminal **La Estrella**.":"Tome la **Línea A** hasta la estación terminal **La Estrella** (en Sabaneta)."];
+    return pre.concat(["Desde la estación tome una ruta integrada «**Estrella**» (3, 5 o 7). Confirme cuál pasa por la Carrera 64.","Bájese cerca de la **Carrera 64** y camine hasta la **Calle 73 sur # 64-133**.","Antes de salir, confirme la dirección con la institución."]);
+  }
+  if(m==="moto"||m==="car"||m==="taxi")return ["Use las vías del sur del Valle de Aburrá hacia La Estrella.","Ingrese la dirección **Calle 73 sur # 64-133** en su app de mapas.","Confirme la dirección por teléfono: hay una versión con «Calle 77 sur»."];
+  return ["Solo es viable si vive cerca de la sede.","De lo contrario, combine Metro y bus (opción «Metro»)."];
+}
+const md=t=>t.replace(/\*\*([^*]+)\*\*/g,"<strong>$1</strong>");
+function btn(id,obj,key,fmt){
+  const box=document.getElementById(id);box.innerHTML="";
+  for(const k in obj){const b=document.createElement("button");b.innerHTML=fmt(obj[k]);
+    b.setAttribute("aria-pressed",st[key]===k);b.onclick=()=>{st[key]=k;render()};box.appendChild(b)}
+}
+function render(){
+  btn("sede",SEDES,"s",v=>ico("pin")+v.n);
+  btn("orig",ORIG,"o",v=>v);
+  btn("mode",MODE,"m",v=>ico(v[1])+v[0]);
+  const ss=steps().filter(Boolean);
+  document.getElementById("out").innerHTML=
+   `<span class="tag">${ico(MODE[st.m][1])} ${MODE[st.m][0]} · ${SEDES[st.s].n}</span><div style="font-size:.9rem;color:var(--mut);margin-top:6px">${SEDES[st.s].d}</div>
+    <ol class="steps">${ss.map(x=>`<li>${md(x)}</li>`).join("")}</ol>
+    <a class="cta" href="tel:+576044444643">${ico("phone")}Llamar</a><a class="cta alt" href="https://wa.me/573135905556">${ico("chat")}WhatsApp</a>`;
+  drawMap();
+}
+function sc(id){document.getElementById("nav").classList.remove("open");document.getElementById("burger").setAttribute("aria-expanded","false");document.getElementById(id).scrollIntoView({behavior:"smooth"})}
+function tog(){const n=document.getElementById("nav"),o=n.classList.toggle("open");document.getElementById("burger").setAttribute("aria-expanded",o)}
+function go(s,p){st.v="o";st.s=s;st.p=p||(s==="s12"?"p1":"p3");render();sc("out")}
+render();
+</script>
+</body>
+</html>
